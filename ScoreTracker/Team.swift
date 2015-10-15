@@ -35,7 +35,7 @@ class Team {
         print(newTeams.count)
         
         
-        
+        newTeams = Game().seedLionsGames(newTeams)
         return newTeams
     }
     
