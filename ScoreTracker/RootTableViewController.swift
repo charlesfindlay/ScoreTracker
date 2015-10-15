@@ -16,7 +16,8 @@ class RootTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        teams = Team.seedTeams()
+        
     }
 
     override func didReceiveMemoryWarning() {
