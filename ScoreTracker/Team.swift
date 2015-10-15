@@ -12,8 +12,8 @@ class Team {
     var name: String
     var games: [Game]
     
-    init() {
-        self.name = ""
+    init(name: String) {
+        self.name = name
         self.games = []
     }
     
@@ -24,4 +24,21 @@ class Team {
     
     
     // MARK: - Seed Data
+    
+    static func seedTeams() -> [Team] {
+        var newTeams: [Team] = []
+        let lions = Team(name: "Detroit Lions")
+        let seahawks = Team(name: "Seattle Seahawks")
+        
+        newTeams.append(lions)
+        newTeams.append(seahawks)
+        print(newTeams.count)
+        
+        
+        
+        return newTeams
+    }
+    
+    
+    
 }

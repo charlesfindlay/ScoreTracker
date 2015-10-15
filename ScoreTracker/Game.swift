@@ -15,8 +15,6 @@ class Game {
     var awayScore: Int
     
     init() {
-        self.home = Team()
-        self.away = Team()
         self.homeScore = 0
         self.awayScore = 0
     }

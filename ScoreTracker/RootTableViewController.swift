@@ -12,13 +12,14 @@ class RootTableViewController: UITableViewController {
 
     
     var teams: [Team] = []
-    var team = Team()
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        teams.append(team.addTeam())
-
+        
+        teams = Team.seedTeams()
+        
     }
 
     override func didReceiveMemoryWarning() {
